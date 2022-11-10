@@ -1,22 +1,18 @@
 {
-  "name": "PlayFab-Samples",
-  "version": "2.6.1",
-  "description": "PlayFab sample repository",
-  "main": "",
+  "name": "playfab-samples",
+  "version": "1.0.0",
+  "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/PlayFab/PlayFab-Samples.git"
-  },
-  "keywords": [
-    "PlayFab"
-  ],
-  "author": "PlayFab",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/PlayFab/PlayFab-Samples/issues"
-  },
-  "homepage": "https://github.com/PlayFab/PlayFab-Samples"
+  "dependencies": {},
+  "devDependencies": {
+    "@azure/functions": "^3.0.0",
+    "@types/node": "16.x",
+    "typescript": "^4.0.0"
+  }
 }
